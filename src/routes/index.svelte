@@ -1,5 +1,9 @@
 <script context="module">
-	export const prerender = true;
+	export const load = ({fetch}) => {
+		return {
+			maxage: 61
+		}
+	}
 </script>
 
 <script>
